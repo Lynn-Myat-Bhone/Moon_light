@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    overflow-x: hidden;
+    background:linear-gradient(#48195c,#7597de);
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:white;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background-color: white;
+    color:#48195c;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                  
+    pointer-events: none;               
+}
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index: 10;
+}
+#text{
+    right: -350px;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 30px;
+    z-index: 9;
+    border-radius: 40px;
+    background: white;
+    font-size: 1.5rem;
+    transform: translateY(100px);
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background:#1c0522 ;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+.sec p{
+    color: white;
+    font-size: 1em;
+}
